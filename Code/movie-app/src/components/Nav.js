@@ -31,7 +31,7 @@ const styles = {
         display: 'block',
         height: '100vh',
         fontSize:'1.5rem',
-        backgroundColor: '#242526'
+        backgroundColor: '#33393d'
     },
     nav:{
         listStyleType: 'none',
@@ -41,14 +41,14 @@ const styles = {
     },
     navContainer:{
         display: 'block',
-        color: '#D3D3D3',
+        color: '#959595',
         padding: "8px 16px",
         textAlign: "left",
         textDecoration: 'none',
 
         "&:hover":{
-            backgroundColor: "#555",
-            color: "black"
+            backgroundColor: "#959595",
+            color: "#FFF"
         }
     }
 }

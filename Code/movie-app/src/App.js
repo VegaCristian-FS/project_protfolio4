@@ -1,5 +1,5 @@
-import './App.css';
 import { Route, Routes } from 'react-router';
+import './App.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import CurrentMovies from './pages/CurrentMovies';
@@ -14,7 +14,7 @@ function App() {
       <header>
         <Header/>
       </header>
-      <main>
+      <body>
         <section>
           <Nav/>
           <section style={styles.container}>
@@ -25,12 +25,12 @@ function App() {
               <Route path='/Income' element={<TVShows/>} />
               <Route path='/Spending' element={<Trending/>} />
             </Routes>
-    </section>
+          </section>
         </section>
         <section>
           {/* Data printed out */}
         </section>
-      </main>
+      </body>
       <footer>
         {/* black bar/ copyright? */}
       </footer>
@@ -39,3 +39,11 @@ function App() {
 }
 
 export default App;
+
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'row',
+    paddingTop: '5rem',
+  }
+}

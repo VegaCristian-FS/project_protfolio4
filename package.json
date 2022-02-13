@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/VegaCristian-FS/project_protfolio4#readme",
   "dependencies": {
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.2.1"
   }
 }
