@@ -6,7 +6,7 @@ function MyHeader() {
             <div style={styles.logo}>
                 <h1> The Movie Spot </h1>
             </div>
-            <div style={styles.searchContainer}>
+            <div>
                 <input style={styles.search} placeholder='Search'></input>
             </div>
         </header>
@@ -18,6 +18,7 @@ const styles={
     header:{
         display: 'flex',
         felxDirection: 'row',
+        justifyContent: 'space-between',
         alignItems: 'center',
         position: 'fixed',
         zIndex: '2',
@@ -31,10 +32,12 @@ const styles={
         backgroundColor: '#F1c538',
         padding: '5px'
     },
-    searchContainer:{
-        textAlign: 'right'
-    },
     search:{
-
+        marginRight: '40px',
+        width: '400px',
+        fontSize: '20px',
+        padding: '5px 0 5px 10px', 
+        display: 'block',
+        borderRadius: '10px'
     }
 }
