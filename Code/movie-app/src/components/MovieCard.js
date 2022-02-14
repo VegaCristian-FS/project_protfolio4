@@ -1,9 +1,9 @@
 import React from 'react'
 
-function MovieCard() {
+function MovieCard(params) {
     return (
         <div >
-            <p style={styles.movie}>Movie</p>
+            <p style={styles.movie}>{params.info.original_title}</p>
         </div>
     )
 }
