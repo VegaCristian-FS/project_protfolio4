@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <MyHeader/>
-      <body>
+      <body style={styles.body}>
         <section>
           <section style={styles.container}>
             <Router>
@@ -37,6 +37,10 @@ const styles = {
   container: {
     display: 'flex',
     flexDirection: 'row',
+    
     paddingTop: '5rem',
+  },
+  body:{
+    backgroundColor: '#313131',
   }
 }

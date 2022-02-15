@@ -16,18 +16,11 @@ function CurrentMovies() {
     const [movieArr, setMovieArr] = useState([])
     return (
         <div style={styles.main}>
-            <h2>In Theaters Now - Current Movies</h2>
+            <h2>In Theaters Now</h2>
             <section style={styles.list}>
                 {movieArr.map((mov) => {                    
                     return(<li key={mov.id}><MovieCard info={mov}/></li>)
                 })}
-                
-                {/* <li><MovieCard/></li>
-                <li><MovieCard/></li>
-                <li><MovieCard/></li>
-                <li><MovieCard/></li>
-                <li><MovieCard/></li>
-                <li><MovieCard/></li> */}
             </section>
             
         </div>
@@ -38,8 +31,7 @@ export default CurrentMovies
 
 const styles={
     main:{
-        marginLeft: '270px',
-        backgroundColor: '#313131',
+        marginLeft: '270px',        
         color: 'white',
         width: '100%',
         height: '100vh',
@@ -47,5 +39,7 @@ const styles={
     list:{
         display: 'grid',
         gridTemplateColumns: 'repeat(4, 1fr)',
+        gridRowGap: '40px',
+        listStyle: 'none'
     }
 }
