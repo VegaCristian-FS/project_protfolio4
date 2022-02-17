@@ -11,8 +11,8 @@ const MyNav = props => {
                 <ul style={styles.nav}>
                     <li><Link to='/CurrentMovies' style={styles.navContainer}><MdMovie/> Current Movies</Link></li>
                     <li><Link to='/Trending' style={styles.navContainer}><MdTrendingUp/> Trending</Link></li>
-                    <li><Link to='/PopularMovies' style={styles.navContainer}><BsFillHeartFill/>Popular Movies</Link></li>
-                    <li><Link to='/TVShows' style={styles.navContainer}><ImTv/>TV Shows</Link></li>
+                    <li><Link to='/PopularMovies' style={styles.navContainer}><BsFillHeartFill/> Popular Movies</Link></li>
+                    <li><Link to='/TVShows' style={styles.navContainer}><ImTv/> TV Shows</Link></li>
                 </ul>
                 
             </nav>

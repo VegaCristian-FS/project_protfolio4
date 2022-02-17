@@ -12,19 +12,17 @@ function App() {
     <div className="App">
       <MyHeader/>
       <body style={styles.body}>
-        <section>
-          <section style={styles.container}>
-            <Router>
-              <MyNav/>
-              <Routes>
-                <Route exact path='/' element={<CurrentMovies />} />
-                <Route path='/CurrentMovies' element={<CurrentMovies />} />
-                <Route path='/PopularMovies' element={<PopMovies/>} />
-                <Route path='/TVShows' element={<TVShows/>} />
-                <Route path='/Trending' element={<Trending/>} />
-              </Routes>
-            </Router>
-          </section>
+        <section style={styles.container}>
+          <Router>
+            <MyNav/>
+            <Routes>
+              <Route exact path='/' element={<CurrentMovies />} />
+              <Route path='/CurrentMovies' element={<CurrentMovies />} />
+              <Route path='/PopularMovies' element={<PopMovies/>} />
+              <Route path='/TVShows' element={<TVShows/>} />
+              <Route path='/Trending' element={<Trending/>} />
+            </Routes>
+          </Router>
         </section>
       </body>
     </div>
