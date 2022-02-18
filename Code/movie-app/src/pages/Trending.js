@@ -8,38 +8,27 @@ function Trending() {
             .then( (data) => {
                 setMovieArr(data.results)
             })
-        console.log('Test')
         return () => {
             // cleanup
         }
     }, [])
     const [movieArr, setMovieArr] = useState([])
     return (
-        <div style={styles.main}>
+        <section style={styles.main}>
             <h2>Movies Trending Now</h2>
-            <section style={styles.list}>
+            <ul className="movieList">
                 {movieArr.map((mov) => {                    
                     return(<li key={mov.id}><MovieCard info={mov}/></li>)
                 })}
-            </section>
-            
-        </div>
+            </ul>              
+        </section>
     )
 }
 
 export default Trending
 
 const styles={
-    main:{
-        marginLeft: '270px',        
-        color: 'white',
-        width: '100%',
-        height: '100vh',
-    },
-    list:{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)',
-        gridRowGap: '40px',
-        listStyle: 'none'
+   main:{
+        margin: '10px 0 0 270px',
     }
 }

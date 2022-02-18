@@ -27,22 +27,20 @@ const styles = {
         position: 'fixed',
         top: '0',
         left: '0',
-        paddingTop: '100px',
+        paddingTop: '80px',
         display: 'block',
         height: '100vh',
         fontSize:'1.5rem',
         backgroundColor: '#33393d'
     },
     nav:{
-        listStyleType: 'none',
-        margin: '0',
         padding: '10px',
-        width: '250px'
+        width: '290px'
     },
     navContainer:{
         display: 'block',
         color: '#959595',
-        padding: "8px 16px",
+        padding: "5px 16px",
         textAlign: "left",
         textDecoration: 'none',
 

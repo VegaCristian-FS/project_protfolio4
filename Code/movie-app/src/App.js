@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import MyHeader from './components/MyHeader';
 import MyNav from './components/MyNav';
@@ -8,23 +8,21 @@ import Trending from './pages/Trending';
 import TVShows from './pages/TVShows';
 
 function App() {
-  return (
+  return (    
     <div className="App">
       <MyHeader/>
-      <body style={styles.body}>
-        <section style={styles.container}>
-          <Router>
-            <MyNav/>
-            <Routes>
-              <Route exact path='/' element={<CurrentMovies />} />
-              <Route path='/CurrentMovies' element={<CurrentMovies />} />
-              <Route path='/PopularMovies' element={<PopMovies/>} />
-              <Route path='/TVShows' element={<TVShows/>} />
-              <Route path='/Trending' element={<Trending/>} />
-            </Routes>
-          </Router>
-        </section>
-      </body>
+      <section style={styles.container}>
+        <Router>
+          <MyNav/>
+          <Routes>
+            <Route exact path='/' element={<CurrentMovies />} />
+            <Route path='/CurrentMovies' element={<CurrentMovies />} />
+            <Route path='/PopularMovies' element={<PopMovies/>} />
+            <Route path='/TVShows' element={<TVShows/>} />
+            <Route path='/Trending' element={<Trending/>} />
+          </Routes>
+        </Router>
+      </section>
     </div>
   );
 }
@@ -32,13 +30,7 @@ function App() {
 export default App;
 
 const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'row',
-    
-    paddingTop: '5rem',
-  },
-  body:{
-    backgroundColor: '#313131',
+  container: {   
+    padding: '100px 0 0 80px'
   }
 }
