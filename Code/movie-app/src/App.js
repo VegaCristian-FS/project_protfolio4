@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { HashRouter as Router, Route, Routes} from "react-router-dom";
 import MyHeader from './components/MyHeader';
 import MyNav from './components/MyNav';
 import CurrentMovies from './pages/CurrentMovies';

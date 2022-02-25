@@ -8,7 +8,6 @@ function TVShows() {
             .then( (data) => {
                 setMovieArr(data.results)
             })
-        console.log('Test')
         return () => {
             // cleanup
         }
