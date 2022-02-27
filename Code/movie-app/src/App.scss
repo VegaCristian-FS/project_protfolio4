@@ -114,6 +114,6 @@ a.active{
     transition: .5s ease;
     opacity: 0;
 }
-.movie-overlay:hover{
+.movie-overlay:hover, .tv-overlay:hover{
     opacity: 1;
 }
