@@ -122,8 +122,9 @@ a.active{
 
 .movie-overlay{
     background: rgba(103, 131, 2, 0.331);
-    z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
 }
