@@ -83,6 +83,7 @@ header{
 .movie{
     margin: 1rem;
     width: 200px;
+    position: relative;
     img{
         max-width: 100%;
     }
@@ -123,12 +124,13 @@ a.active{
 .movie-overlay{
     display: block;
     background: rgba(0, 0, 0, 0.331);
-    position: relative;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
     width: 200px;
     height: 300px;
+    transition: .5s ease;
     opacity: 0;
 }
 .movie-overlay:hover{
