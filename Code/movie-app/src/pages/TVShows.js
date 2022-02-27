@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import MovieCard from '../components/MovieCard'
+import TVCard from '../components/TVCard'
 
 function TVShows() {
     useEffect(() => {
@@ -18,7 +18,7 @@ function TVShows() {
             <h2>Popular TV Shows</h2>
             <ul className="movieList">
                 {movieArr.map((mov) => {                    
-                    return(<li key={mov.id}><MovieCard info={mov}/></li>)
+                    return(<li key={mov.id}><TVCard info={mov}/></li>)
                 })}
             </ul>            
         </section>

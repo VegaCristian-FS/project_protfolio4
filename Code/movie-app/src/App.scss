@@ -85,7 +85,7 @@ header{
     display: flex;
     flex-wrap: wrap;
 }
-.movie{
+.movie, .tvCard{
     margin: 1rem;
     width: 200px;
     position: relative;
@@ -99,12 +99,12 @@ a.active{
     color: #fff;
 }
 
-.movie-overlay{
+.movie-overlay, .tv-overlay{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background: rgba(23, 23, 23, 0.5);
+    background: rgba(23, 23, 23, 0.8);
     position: absolute;
     z-index: 1;
     top: 0;
