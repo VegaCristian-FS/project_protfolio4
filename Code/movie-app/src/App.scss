@@ -87,7 +87,7 @@ header{
 }
 .movie, .tvCard{
     margin: 1rem;
-    width: 200px;
+    width: 185px;
     position: relative;
     img{
         max-width: 100%;
@@ -109,8 +109,8 @@ a.active{
     z-index: 1;
     top: 0;
     left: 0;
-    width: 200px;
-    height: 300px;
+    width: 185px;
+    height: 278px;
     transition: .5s ease;
     opacity: 0;
 }
